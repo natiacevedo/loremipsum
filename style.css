@@ -1,0 +1,164 @@
+/* 233343 */
+
+/* Texto base del documento y background*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.7em;
+    background: #f9fafa;
+}
+
+img{
+    width: 100%;
+}
+
+/* Header */
+header{
+    background-image: url("img/background-header.png"), url("img/background-header-color.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.nav-link{
+    background-color: rgba(0, 0, 0, 0.274);
+    line-height: 39px;
+    font-weight: 700;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover{
+    border: 2px solid white;
+}
+
+.logo{
+    width: 180px;
+    transition: all .4s ease-out;
+}
+
+.logo:hover{
+    filter: brightness(2);
+    width: 300px;
+    padding: 5px 230px 5px 10px;
+    background-color: transparent;
+}
+
+.logo, header div, .nav-link{
+    display: inline-block;
+}
+
+header h1{
+    font-size: 3em;
+    font-weight: 300;
+    padding: .35em 0 .4em 0;
+}
+
+/* Seccion de "News" */
+
+@media screen and (min-width: 991px){
+    
+    .primary-article{
+        position: relative;
+        height: 498px;
+    }
+    
+    #news :nth-child(2)>img{
+        position: absolute;
+        right: 0;
+    }
+    
+    #news :nth-child(2)>div{
+        position: absolute;
+        left: 0;
+    }
+    
+    .primary-article-img, .primary-article-text{
+        width: 649px;
+    }
+    
+    .primary-article-text{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+}
+    
+
+.primary-article-text h1{
+    font-size: 1.5em;
+}
+
+.primary-article-text p{
+    font-size: 1.2em;
+}
+
+/* Seccion de "Blog" */
+
+#blog h3, #team h3{
+    font-size: 2.1em;
+}
+
+.blog-article{
+    color: #666666;
+}
+
+.blog-article h1{
+    font-size: 1.4em;
+}
+
+.blog-article:hover h1{
+    color: #006d68;
+}
+
+.tarjeta{
+    height: 165px;
+    width: 368px;
+    background: url(img/placeholder.svg) top left / 111px repeat-y white;
+    filter: saturate(0);
+    opacity: .8;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.11);
+}
+.card-img{
+    width: 111px;
+}
+
+.tarjeta:hover{
+    box-shadow: 2px 2px 20px;
+    opacity: 1;
+    filter: saturate(1);
+}
+/* Footer */
+footer{
+    background: url("img/background-footer.png");
+}
+
+.footer-text h4{
+    font-size: 1.8em;
+}
+
+.footer-text p{
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+.footer-text strong{
+    font-size: 1.1em;
+}
+
+.footer-text h5{
+    font-size: 1.4em;
+}
+
+/* Creditos */
+.fixed-c{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+    font-size: 9px;
+    line-height: 33px;
+}
